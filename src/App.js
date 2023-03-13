@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./Css/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer";
+import SideBar from "./Components/SideBar";
+import RightBar from "./Components/RightBar";
+import Picker from "./Views/Picker";
+import NotFound from "./Views/NotFound";
+import FontPage from "./Views/Fonts";
+import Generators from "./Views/Generators";
+import ToolsPage from "./Views/Tools";
+import AboutMe from "./Views/AboutMe";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-container">
+        <SideBar />
+        <main>
+          <Router>
+            <Routes>
+              <Route exact path="/" element={<Picker />}></Route>
+              <Route exact path="/fonts" element={<FontPage />}></Route>
+              <Route exact path="/generators" element={<Generators />}></Route>
+              <Route exact path="/tools" element={<ToolsPage />}></Route>
+              <Route exact path="/aboutme" element={<AboutMe />}></Route>
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Router>
+        </main>
+        <RightBar />
+      </div>
+      <Footer />
     </div>
   );
 }
