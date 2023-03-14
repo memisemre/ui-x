@@ -1,6 +1,5 @@
 import "./Css/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./Components/Footer";
 import SideBar from "./Components/SideBar";
 import RightBar from "./Components/RightBar";
 import Picker from "./Views/Picker";
@@ -12,7 +11,6 @@ import AboutMe from "./Views/AboutMe";
 
 function App() {
   return (
-    <div className="app">
       <div className="app-container">
         <SideBar />
         <main>
@@ -29,8 +27,6 @@ function App() {
         </main>
         <RightBar />
       </div>
-      <Footer />
-    </div>
   );
 }
 
