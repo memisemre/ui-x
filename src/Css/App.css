@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.logo-container {
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer; }
+  .logo-container a {
+    font-weight: bold;
+    color: #a569bd; }
+  .logo-container:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 4px;
+    border-radius: 16px;
+    background-color: #a569bd;
+    transition: 0.5s all ease; }
+  .logo-container:hover:after {
+    width: 25%; }
+
 .sideBar {
   background: #EFF2F4;
   max-width: 280px;
@@ -49,6 +70,19 @@
         .sideBar .navItem-wrapper .dropDown-container .dropDown-item p {
           font-size: 14px;
           margin-left: 16px; }
+
+::-webkit-scrollbar {
+  width: 16px; }
+
+::-webkit-scrollbar-track {
+  background: #EBDEF0; }
+
+::-webkit-scrollbar-thumb {
+  background: #8E44AD;
+  border-radius: 32px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5B2C6F; }
 
 * {
   margin: 0;
