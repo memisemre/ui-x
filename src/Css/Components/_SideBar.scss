@@ -1,12 +1,64 @@
 .sideBar{
-    background:#031C30;
-    max-width: 340px;
+    background:#EFF2F4;
+    max-width: 280px;
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     padding: 32px 16px;
     display: grid;
     grid-template-rows: 100px auto 100px;
-    .active{
-        color: #A569BD;
+    overflow-y: auto;
+    .navItem.active{
+        background: rgba(165, 105, 189,0.4) !important;
+        color: rgba(165, 105, 189,1) !important;
+        font-weight: bold;
     }
+    .navItem-wrapper{
+        cursor: pointer;
+        .navItem{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #5D7285;
+            font-size: 16px;
+            line-height: 22px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            padding: 8px 16px;        
+            transition: 0.25s all ease-out;
+            &:hover{
+                color: rgba(165, 105, 189,1);
+                font-weight: bold
+            }
+            .container{
+                display: flex;
+                align-items: center;
+                p{
+                    margin-left: 16px;
+                }
+                .icon-container{
+                    font-size: 32px;
+                }
+            }
+        }
+        .dropDown-container.active{
+            display: block;
+        }
+        .dropDown-container{
+            display: none;
+            .dropDown-item{    
+                color: #5D7285;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+                padding: 8px 16px 8px 40px;
+                p{
+                    font-size: 14px;
+                    margin-left: 16px;
+                }
+                }
+            }
+    }
+
 }
+

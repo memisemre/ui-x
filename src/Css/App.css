@@ -1,4 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+.sideBar {
+  background: #EFF2F4;
+  max-width: 280px;
+  width: 100%;
+  max-height: 100vh;
+  padding: 32px 16px;
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  overflow-y: auto; }
+  .sideBar .navItem.active {
+    background: rgba(165, 105, 189, 0.4) !important;
+    color: #a569bd !important;
+    font-weight: bold; }
+  .sideBar .navItem-wrapper {
+    cursor: pointer; }
+    .sideBar .navItem-wrapper .navItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #5D7285;
+      font-size: 16px;
+      line-height: 22px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      padding: 8px 16px;
+      transition: 0.25s all ease-out; }
+      .sideBar .navItem-wrapper .navItem:hover {
+        color: #a569bd;
+        font-weight: bold; }
+      .sideBar .navItem-wrapper .navItem .container {
+        display: flex;
+        align-items: center; }
+        .sideBar .navItem-wrapper .navItem .container p {
+          margin-left: 16px; }
+        .sideBar .navItem-wrapper .navItem .container .icon-container {
+          font-size: 32px; }
+    .sideBar .navItem-wrapper .dropDown-container.active {
+      display: block; }
+    .sideBar .navItem-wrapper .dropDown-container {
+      display: none; }
+      .sideBar .navItem-wrapper .dropDown-container .dropDown-item {
+        color: #5D7285;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        padding: 8px 16px 8px 40px; }
+        .sideBar .navItem-wrapper .dropDown-container .dropDown-item p {
+          font-size: 14px;
+          margin-left: 16px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +59,10 @@
 a {
   text-decoration: none; }
 
-.app {
-  max-width: 1240px;
-  margin: 0 auto; }
-
 .app-container {
-  display: grid;
-  grid-template-columns: 340px auto 340px; }
-
-div,
-header,
-footer,
-main {
-  border: 1px solid red; }
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #E2E7EB; }
 
 /*# sourceMappingURL=App.css.map */

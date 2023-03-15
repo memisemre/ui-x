@@ -5,7 +5,6 @@
 @import './Components/Logo';
 @import './Components/SideBar';
 @import './Components/RightBar';
-@import './Components/Footer';
 @import './Views/FontsPage';
 @import './Views/GeneratorsPage';
 @import './Views/PickerPage';
@@ -24,17 +23,9 @@ a{
 }
 
 //Custom Css
-.app{
-    max-width: 1240px;
-    margin: 0 auto;
-}
 .app-container{
-    display: grid;
-    grid-template-columns: 340px auto 340px;
-}
-div,
-header,
-footer,
-main{
-    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: #E2E7EB;
 }

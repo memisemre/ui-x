@@ -30,23 +30,23 @@ export const Categories = [
         "icon": <GiPowerGenerator />,
         "subCategories": [
             {
-                "categoryName": "Box Shadow Generator",
+                "categoryName": "Box Shadow",
                 "icon": <TbInnerShadowBottomLeft />
             },
             {
-                "categoryName": "Grid Template Generator",
+                "categoryName": "Grid Template",
                 "icon": <BsGrid1X2 />
             },
             {
-                "categoryName": "Gradient Generator",
+                "categoryName": "Gradient",
                 "icon": <RiGradienterLine />
             },
             {
-                "categoryName": "Css Animation Generator",
+                "categoryName": "Css Animation",
                 "icon": <MdAnimation />
             },
             {
-                "categoryName": "GlassMorphism Generator",
+                "categoryName": "GlassMorphism",
                 "icon": <GiGlassBall />
             }
         ]
