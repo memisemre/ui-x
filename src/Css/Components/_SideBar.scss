@@ -1,5 +1,5 @@
-.sideBar{
-    background:#EFF2F4;
+.sideBar {
+    background: #EFF2F4;
     max-width: 280px;
     width: 100%;
     max-height: 100vh;
@@ -7,14 +7,17 @@
     display: grid;
     grid-template-rows: 100px auto 100px;
     overflow-y: auto;
-    .navItem.active{
-        background: rgba(165, 105, 189,0.4) !important;
-        color: rgba(165, 105, 189,1) !important;
+
+    .navItem.active {
+        background: rgba(165, 105, 189, 0.4) !important;
+        color: rgba(165, 105, 189, 1) !important;
         font-weight: bold;
     }
-    .navItem-wrapper{
+
+    .navItem-wrapper {
         cursor: pointer;
-        .navItem{
+
+        .navItem {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -23,42 +26,61 @@
             line-height: 22px;
             border-radius: 12px;
             margin-bottom: 16px;
-            padding: 8px 16px;        
+            padding: 8px 16px;
             transition: 0.25s all ease-out;
-            &:hover{
-                color: rgba(165, 105, 189,1);
+
+            &:hover {
+                color: rgba(165, 105, 189, 1);
                 font-weight: bold
             }
-            .container{
+
+            .container {
                 display: flex;
                 align-items: center;
-                p{
+
+                p {
                     margin-left: 16px;
                 }
-                .icon-container{
+
+                .icon-container {
                     font-size: 32px;
                 }
             }
         }
-        .dropDown-container.active{
+
+        .dropDown-container.active {
             display: block;
         }
-        .dropDown-container{
+
+        .dropDown-container {
             display: none;
-            .dropDown-item{    
+
+            .dropDown-item {
                 color: #5D7285;
                 font-size: 18px;
                 display: flex;
                 align-items: center;
                 margin-bottom: 12px;
                 padding: 8px 16px 8px 40px;
-                p{
+
+                p {
                     font-size: 14px;
                     margin-left: 16px;
                 }
-                }
             }
+        }
     }
-
+    .aboutMe-btn{
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        color: rgba(165, 105, 189, 0.4);
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+        &:hover{
+            color: rgba(165, 105, 189, 1);
+        }
+    }
 }
-

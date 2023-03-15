@@ -12,8 +12,6 @@ import AboutMe from "./Views/AboutMe";
 function App() {
   return (
       <div className="app-container">
-        <SideBar />
-        <main>
           <Router>
             <Routes>
               <Route exact path="/" element={<Picker />}></Route>
@@ -24,8 +22,6 @@ function App() {
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
-        </main>
-        <RightBar />
       </div>
   );
 }

@@ -2,14 +2,14 @@ import React from "react";
 import SideBar from "../../Components/SideBar";
 import RightBar from "../../Components/RightBar";
 
-const Picker = () => {
+const viewName = () => {
   return (
     <>
       <SideBar />
-      <div className="Picker-container"> osman </div>
+      <div className="viewName-container"> viewName </div>
       <RightBar />
     </>
   );
 };
 
-export default Picker;
+export default viewName;

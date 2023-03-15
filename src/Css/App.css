@@ -70,6 +70,17 @@
         .sideBar .navItem-wrapper .dropDown-container .dropDown-item p {
           font-size: 14px;
           margin-left: 16px; }
+  .sideBar .aboutMe-btn {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: rgba(165, 105, 189, 0.4);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease; }
+    .sideBar .aboutMe-btn:hover {
+      color: #a569bd; }
 
 ::-webkit-scrollbar {
   width: 16px; }
