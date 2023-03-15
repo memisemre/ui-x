@@ -1,0 +1,26 @@
+.logo-container {
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    a {
+        font-weight: bold;
+        color: rgba(165, 105, 189, 1);
+    }
+    &:after{
+        content: "";
+        display: block;
+        width: 8px;
+        height: 4px;
+        border-radius: 16px;
+        background-color: rgba(165, 105, 189, 1);
+       transition: 0.5s all ease;
+    }
+    &:hover{
+        &:after{
+            width: 25%;
+        }
+    }
+}

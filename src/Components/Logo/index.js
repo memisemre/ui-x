@@ -3,7 +3,7 @@ import React from 'react';
 function Logo () {
     return (
         <div className='logo-container'>
-           <a href='#'>uix</a>
+           <a href='#'>u<span>I</span>x</a>
         </div>
     )
 }
