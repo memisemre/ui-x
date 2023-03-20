@@ -7,7 +7,7 @@
     cursor: pointer;
     a {
         font-weight: bold;
-        color: rgba(165, 105, 189, 1);
+        color: #FFFFFF;
     }
     &:after{
         content: "";
@@ -15,11 +15,13 @@
         width: 8px;
         height: 4px;
         border-radius: 16px;
-        background-color: rgba(165, 105, 189, 1);
-       transition: 0.5s all ease;
+        background-color: #FFFFFF;
+        transition: 0.5s all ease;
+        opacity: 0.5;
     }
     &:hover{
         &:after{
+            opacity: 1;
             width: 25%;
         }
     }

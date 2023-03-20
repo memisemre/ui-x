@@ -8,16 +8,18 @@
   cursor: pointer; }
   .logo-container a {
     font-weight: bold;
-    color: #a569bd; }
+    color: #FFFFFF; }
   .logo-container:after {
     content: "";
     display: block;
     width: 8px;
     height: 4px;
     border-radius: 16px;
-    background-color: #a569bd;
-    transition: 0.5s all ease; }
+    background-color: #FFFFFF;
+    transition: 0.5s all ease;
+    opacity: 0.5; }
   .logo-container:hover:after {
+    opacity: 1;
     width: 25%; }
 
 .sideBar {
