@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Categories } from "./utils";
 import { AiFillCaretDown } from "react-icons/ai";
 
-const SideBarLinks = () => {
-  const [activeCategory, setActiveCategory] = useState("Picker");
+const SideBarLinks = (props) => {
+
+  const [activeCategory, setActiveCategory] = useState(props.activePathCategory);
   const [activeSubCategory, setActiveSubCategory] = useState(null);
   const handleSubCategoryClick = ()=>{
     activeSubCategory && setActiveSubCategory(null);

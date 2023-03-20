@@ -21,7 +21,7 @@
     width: 25%; }
 
 .sideBar {
-  background: #EFF2F4;
+  background: #031C30;
   max-width: 280px;
   width: 100%;
   max-height: 100vh;
@@ -30,8 +30,8 @@
   grid-template-rows: 100px auto 100px;
   overflow-y: auto; }
   .sideBar .navItem.active {
-    background: rgba(165, 105, 189, 0.4) !important;
-    color: #a569bd !important;
+    background: #667A8A !important;
+    color: #FFFFFF !important;
     font-weight: bold; }
   .sideBar .navItem-wrapper {
     cursor: pointer; }
@@ -47,7 +47,7 @@
       padding: 8px 16px;
       transition: 0.25s all ease-out; }
       .sideBar .navItem-wrapper .navItem:hover {
-        color: #a569bd;
+        color: #667A8A;
         font-weight: bold; }
       .sideBar .navItem-wrapper .navItem .container {
         display: flex;
@@ -85,15 +85,12 @@
 ::-webkit-scrollbar {
   width: 16px; }
 
-::-webkit-scrollbar-track {
-  background: #EBDEF0; }
-
 ::-webkit-scrollbar-thumb {
-  background: #8E44AD;
+  background: #667A8A;
   border-radius: 32px; }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5B2C6F; }
+  background: #FFFFFF; }
 
 * {
   margin: 0;
