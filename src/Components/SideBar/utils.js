@@ -11,57 +11,81 @@ import { TbInnerShadowBottomLeft , TbArrowsDoubleNeSw } from "react-icons/tb";
 export const Categories = [
     {
         "categoryName": "Picker",
-        "icon": <CiPickerHalf />
+        "icon": <CiPickerHalf />,
+        "link": "/",
+        "key": Math.random()
     },
     {
         "categoryName": "Fonts",
-        "icon": <AiOutlineFontSize />
+        "icon": <AiOutlineFontSize />,
+        "link": "/fonts",
+        "key": Math.random()
     },
     {
         "categoryName": "Colors",
-        "icon": <BiColorFill />
+        "icon": <BiColorFill />,
+        "link": "/colors",
+        "key": Math.random()
     },
     {
         "categoryName": "Color Palettes",
-        "icon": <CiPalette />
+        "icon": <CiPalette />,
+        "link": "/",
+        "key": Math.random()
     },
     {
         "categoryName": "Generators",
         "icon": <GiPowerGenerator />,
+        "key": Math.random(),
         "subCategories": [
             {
                 "categoryName": "Box Shadow",
-                "icon": <TbInnerShadowBottomLeft />
+                "icon": <TbInnerShadowBottomLeft />,
+                "link": "/",
+                "key": Math.random(),
             },
             {
                 "categoryName": "Grid Template",
-                "icon": <BsGrid1X2 />
+                "icon": <BsGrid1X2 />,
+                "link": "/",
+                "key": Math.random(),
             },
             {
                 "categoryName": "Gradient",
-                "icon": <RiGradienterLine />
+                "icon": <RiGradienterLine />,
+                "link": "/",
+                "key": Math.random(),
             },
             {
                 "categoryName": "Css Animation",
-                "icon": <MdAnimation />
+                "icon": <MdAnimation />,
+                "link": "/",
+                "key": Math.random(),
             },
             {
                 "categoryName": "GlassMorphism",
-                "icon": <GiGlassBall />
+                "icon": <GiGlassBall />,
+                "link": "/",
+                "key": Math.random(),
             }
         ]
     },
     {
         "categoryName": "Convert Tools",
         "icon": <TbArrowsDoubleNeSw />,
+        "key": Math.random(),
         "subCategories": [
             {
                 "categoryName": "HEX to RGB",
-                "icon": <SiConvertio />
+                "icon": <SiConvertio />,
+                "link": "/",
+                "key": Math.random(),
             },
             {
                 "categoryName": "RGB to HEX",
-                "icon": <SiConvertio />
+                "icon": <SiConvertio />,
+                "link": "/",
+                "key": Math.random(),
             }
         ]
     }

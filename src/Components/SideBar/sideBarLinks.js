@@ -11,9 +11,9 @@ const SideBarLinks = () => {
   return (
     <nav>
       {Categories.map((navItem) => {
-        const { icon, categoryName, subCategories } = navItem;
+        const { icon, categoryName, subCategories, key } = navItem;
         return (
-          <div className="navItem-wrapper" key={categoryName}>
+          <div className="navItem-wrapper" key={key}>
             <div
               className={`navItem ${
                 activeCategory === categoryName ? "active" : ""
@@ -35,9 +35,9 @@ const SideBarLinks = () => {
                   activeSubCategory === categoryName ? "active" : ""
                 }`}>
                   {subCategories.map((subNavItem) => {
-                    const { categoryName, icon } = subNavItem;
+                    const { categoryName, icons,key } = subNavItem;
                     return (
-                      <div className="dropDown-item">
+                      <div className="dropDown-item" key={key} >
                         {icon} <p>{categoryName}</p>
                       </div>
                     );

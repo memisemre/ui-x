@@ -5,9 +5,7 @@ import RightBar from "../../Components/RightBar";
 const Picker = () => {
   return (
     <>
-      <SideBar />
       <div className="Picker-container"> osman </div>
-      <RightBar />
     </>
   );
 };

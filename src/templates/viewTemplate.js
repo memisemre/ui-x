@@ -5,9 +5,7 @@ import RightBar from "../../Components/RightBar";
 const viewName = () => {
   return (
     <>
-      <SideBar />
       <div className="viewName-container"> viewName </div>
-      <RightBar />
     </>
   );
 };

@@ -12,6 +12,7 @@ import AboutMe from "./Views/AboutMe";
 function App() {
   return (
       <div className="app-container">
+        <SideBar />
           <Router>
             <Routes>
               <Route exact path="/" element={<Picker />}></Route>
@@ -19,9 +20,11 @@ function App() {
               <Route exact path="/generators" element={<Generators />}></Route>
               <Route exact path="/tools" element={<ToolsPage />}></Route>
               <Route exact path="/aboutme" element={<AboutMe />}></Route>
+              <Route exact path="/aboutme" element={<AboutMe />}></Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Router>
+          <RightBar/>
       </div>
   );
 }
